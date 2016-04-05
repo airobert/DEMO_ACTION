@@ -5,6 +5,7 @@ infix 1 ==>
 (==>) :: Bool -> Bool -> Bool
 p ==> q = (not p) || q
 
+forall :: Foldable t => t a -> (a -> Bool) -> Bool
 forall = flip all
 
 apply :: Eq a => [(a,b)] -> a -> b
